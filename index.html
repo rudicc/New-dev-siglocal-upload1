@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="UTF-8" />    
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Plung PDF</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.min.js" integrity="sha512-Z8CqofpIcnJN80feS2uccz+pXWgZzeKxDsDNMD/dJ6997/LSRY+W4NmEt9acwR+Gt9OHN0kkI1CTianCwoqcjQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+    
+       <!-- Bootstrap CSS -->
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        
+       <script defer="script" src="./js/indexconvert.js"></script>
+
+    </head>
+    <body>
+ 
+    <div class="container">
+
+    
+
+        <div class="mb-3">
+           
+            <label for="file" class="form-label">PDF</label>
+             <input type="file" class="selectpdf form-control"    accept="pdf/*" multiple />
+        </div>
+        <div class="mb-3">
+       
+            <label  class="form-label">Password</label>
+            <input  type="password"   class="pwd form-control" placeholder="optional">
+        </div>
+ 
+         <button type="button" class="btn btn-success upload" >Upload</button>
+         <div class="mb-3">
+            <div id="prog" class="progress" style="height:50px;">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" 
+                aria-valuemin="0" 
+                aria-valuemax="100" style="min-width: 15px;" 
+                >
+                <!-- -->
+                </div>
+            </div>
+
+        </div>
+
+         <hr>
+         <div class="afteruplad mb-3">
+            <a href="" class="downloadcss btn btn-success" download >1.Download ไฟล์ข้อมูล .css Filp E-book</a>
+           
+            <a href="" class="download btn btn-success" download >2.Download ไฟล์แสดงผลหน้าจอ .html Filp E-book</a>   
+
+            <textarea  class="trcss form-control " rows="10"></textarea>
+
+         </div>
+         <hr>
+                  
+         <div class="afterupload mb-3">  
+
+            <textarea class="paftext form-control" rows="3" hidden></textarea>
+
+         </div>
+         
+         <div class="vbody_pdf">
+            <div id="pdfView" class="pdf-book">
+                <!-- add canvas-->
+
+            </div>
+        </div>    
+     </div>
+ <div>
+
+</div>
+    </body>
+</html>
